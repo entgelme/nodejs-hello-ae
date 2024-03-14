@@ -5,7 +5,7 @@ EXPOSE 8080
 RUN mkdir -p /opt/app-root/
 WORKDIR /opt/app-root
 # Copy the sources to APP_ROOT 
-COPY package.json server.js /opt/app-root
+COPY src /opt/app-root
 # Install the dependencies 
 RUN npm install
 # Start node server on port 8080
