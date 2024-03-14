@@ -10,7 +10,7 @@ WORKDIR /opt/app-root
 COPY src /opt/app-root
 # Install the dependencies 
 RUN npm install
-RUN chown -R 1000700000:0 "/opt/app-root/src/.npm"
+#RUN chown -R 1000700000:0 "/opt/app-root/src/.npm"
 # Start node server on port 8080
 #CMD [ "npm", "start" ]
 CMD [ "node", "server.js" ]
