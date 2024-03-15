@@ -13,5 +13,5 @@ RUN npm install
 #RUN chown -R 1000700000:0 "/opt/app-root/src/.npm"
 # Start node server on port 8080
 #CMD [ "npm", "start" ]
-CMD [ "node", "server.js" ]
+CMD [ "node", "server2.js" ]
 RUN echo "Started Node.js server..."
